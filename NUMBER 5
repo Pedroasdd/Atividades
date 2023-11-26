@@ -1,0 +1,19 @@
+double soma(double n, double a1, double an){
+    double soma = 0;
+    soma = n *(a1 + an)/ 2;
+    return  soma;
+}
+
+
+int main(){
+
+    double n, a1, an;
+
+    scanf("%lf %lf %lf", &a1, &an, &n);
+
+    double resultado = soma(n, a1, an);
+
+    printf("%2.lf\n", resultado);
+
+    return 0;
+}
