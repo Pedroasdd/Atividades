@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+double delta(double a, double b, double c){
+    return b*b-4*a*c;
+}
+
+int main(){
+
+    double a, b, c, calculo;
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    calculo = delta(a,b,c);
+
+    printf("Delta eh = %.2lf\n", calculo);
+
+    return 0;
+}
