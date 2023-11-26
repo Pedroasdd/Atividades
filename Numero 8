@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+//Supondo um empréstimo no valor de c Reais, por m meses a juros de t% ao mês, crie
+//uma função capaz de descobrir os juros cobrados nesse empréstimo. A fórmula para
+//cálculo dos juros simples é a que se segue: j = c m t.
+
+float juros(float m, float t, float c){
+
+    float juros = c * m * t;
+
+    return juros;
+}
+
+int main(){
+
+    float c, m, t;
+
+    t = t/100;
+
+    scanf("%f %f %f", &c, &m, &t);
+
+    float total = juros(c,m,t);
+
+    printf("Os juros compostos sao: %f", total);
+
+    return 0;
+
+}
