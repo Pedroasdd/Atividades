@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+//Faça uma função capaz de receber 3 números e retornar a soma do maior com o menor número.
+
+float soma_maior_menor(float a, float b, float c) {
+
+    float maior = a;
+    if (b > maior) {
+        maior = b;
+    }
+    if (c > maior) {
+        maior = c;
+    }
+
+    float menor = a;
+    if (b < menor) {
+        menor = b;
+    }
+    if (c < menor) {
+        menor = c;
+    }
+
+
+    return maior + menor;
+}
+
+int main() {
+
+    float num1, num2, num3;
+
+    scanf("%f %f %f", &num1, &num2, &num3);
+
+
+    float resultado = soma_maior_menor(num1, num2, num3);
+    printf("A soma do maior e do menor numero é: %.2f\n", resultado);
+
+    return 0;
+}
