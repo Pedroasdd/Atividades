@@ -1,3 +1,7 @@
+//Faça uma função capaz de receber três números a, b e c, e imprimir as duas raízes da
+//equação do segundo grau. Se a função tem apenas uma raiz, imprimir apenas essa raiz. Se
+//não tiver raiz, imprima não existem raízes.
+
 #include<stdio.h>
 #include<math.h>
 
