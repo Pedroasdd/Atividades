@@ -1,3 +1,4 @@
+//Crie uma função capaz de receber 2 números x e y, e retornar qual dos dois é maior.
 #include<stdio.h>
 
 double maior(double a, double b){
