@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+
+void raizes(float a, float b, float c){
+
+    float delta = b*b-4*a*c;
+
+    if(delta > 0){
+        float raiz1 = (-b + sqrt(delta))/2*a;
+        float raiz2 = (-b - sqrt(delta))/2*a;
+        printf("as duas raizes sao %f %f", raiz1, raiz2);
+    }
+    else if(delta == 0){
+        float raiz0 = (-b + sqrt(delta))/2*a;
+        printf("a unica raiz e %f", raiz0);
+    }
+    else{
+        printf("Nao ha raizes reais");
+    }
+    return raizes;
+}
+
+int main(){
+
+    float a, b, c;
+    scanf("%f %f %f", &a, &b, &c);
+    raizes(a, b, c);
+
+
+    return 0;
+}
